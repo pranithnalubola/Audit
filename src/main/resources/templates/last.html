@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Success</title>
+<style type="text/css">
+    span {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<div align="center">
+    <h2>Audit Status!</h2>
+    <span>Project Name:</span><span th:text="${details.projectName}"></span><br/>
+    <span>Manager Name:</span><span th:text="${details.managerName}"></span><br/>
+    <span>Application Name:</span><span th:text="${details.applicationName}"></span><br/>
+    <span>Status:</span><span th:text="${details.status}"></span><br/>
+    <span>Status:</span><span th:text="${details.action}"></span><br/>
+</div>
+</body>
+</html>

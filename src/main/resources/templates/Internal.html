@@ -35,64 +35,30 @@
 				
 
 				<h1>Internal Audit Questions</h1>
-                <div>
-                <h3>Question 1</h3>
-				<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Yes
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-  <label class="form-check-label" for="flexRadioDefault2">
-    No
-  </label>
-</div>
-        
+        <div>
+            <form action="#" th:action="@{/submit}" method="post" th:object="${details}">
+              <h3>Question 1</h3>
+              <input type="radio" th:field="*{answerOne}" value="Yes" />Yes
+              <input type="radio" th:field="*{answerOne}" value="No" />No<br/>
 
-                </div>
-                <div>
-                <h3>Question 2</h3>
-				<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Yes
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-  <label class="form-check-label" for="flexRadioDefault2">
-    No
-  </label>
-</div>
-        
+			  <h3>Question 2</h3>
+              <input type="radio" th:field="*{answerTwo}" value="Yes" />Yes
+              <input type="radio" th:field="*{answerTwo}" value="No" />No<br/>
 
-                </div>
-                <div>
-                <h3>Question 3</h3>
-				<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Yes
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-  <label class="form-check-label" for="flexRadioDefault2">
-    No
-  </label>
-</div>
-        
+			  <h3>Question 3</h3>
+              <input type="radio" th:field="*{answerThree}" value="Yes" />Yes
+              <input type="radio" th:field="*{answerThree}" value="No" />No<br/>
 
-                </div>
-                
-                <br>
-                <br>
-                <div class="form-group">
-						<button type="submit" class="btn btn-success">Submit</button>
-						
-					</div>
+			  <h3>Question 4</h3>
+              <input type="radio" th:field="*{answerFour}" value="Yes" />Yes
+              <input type="radio" th:field="*{answerFour}" value="No" />No<br/>
+
+			  <h3>Question 5</h3>
+              <input type="radio" th:field="*{answerFive}" value="Yes" />Yes
+              <input type="radio" th:field="*{answerFive}" value="No" />No<br/>
+						  <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+				</div>
                 
                 
 			</div>
